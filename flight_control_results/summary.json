@@ -1,0 +1,228 @@
+{
+  "model": {
+    "integrator": "fourth-order Runge-Kutta",
+    "duration_s": 10.0,
+    "time_step_s": 0.01,
+    "integration_steps": 1000,
+    "disturbance_time_s": 1.0,
+    "pitch_rate_disturbance_radps": 0.05,
+    "gain_combinations_evaluated": 130
+  },
+  "aircraft": {
+    "mass": 5.0,
+    "gravity": 9.81,
+    "rho": 1.225,
+    "wing_area": 0.8,
+    "mean_chord": 0.35,
+    "pitch_inertia": 1.0,
+    "cl0": 0.2,
+    "cl_alpha": 5.0,
+    "cd0": 0.05,
+    "induced_drag_factor": 0.06,
+    "cm0": 0.02,
+    "cm_alpha": -0.35,
+    "cm_q": -3.5,
+    "cm_delta_e": -1.1,
+    "elevator_limit": 0.30019663134302466
+  },
+  "trim": {
+    "speed": 15.0,
+    "alpha": 0.04838192747939443,
+    "theta": 0.04838192747939443,
+    "elevator": 0.002787568529283592,
+    "thrust": 6.8122760741246875
+  },
+  "selected_controller": {
+    "kp": 1.5,
+    "kq": 0.5666666666666667
+  },
+  "metrics": {
+    "open_loop": {
+      "peak_abs_aoa_error_deg": 0.22682016335493219,
+      "rms_aoa_error_deg": 0.06548966384237352,
+      "final_aoa_error_deg": -0.02012779043315578,
+      "settling_time_2pct_s": 7.609999999999999,
+      "peak_elevator_delta_deg": 0.0,
+      "peak_pitch_rate_degps": 2.8647889756541165,
+      "final_altitude_change_m": -0.13177487262923052
+    },
+    "closed_loop": {
+      "peak_abs_aoa_error_deg": 0.06398187911025671,
+      "rms_aoa_error_deg": 0.009574143038409817,
+      "final_aoa_error_deg": -0.005427618880160812,
+      "settling_time_2pct_s": 0.1100000000000001,
+      "peak_elevator_delta_deg": 1.6233804195373327,
+      "peak_pitch_rate_degps": 2.8647889756541165,
+      "final_altitude_change_m": -0.005613448363889253
+    }
+  },
+  "improvements": {
+    "peak_aoa_error_reduction_percent": 71.79180273751203,
+    "rms_aoa_error_reduction_percent": 85.38068074153848,
+    "settling_time_reduction_percent": 98.55453350854138
+  },
+  "robustness_study": {
+    "number_of_cases": 9,
+    "all_cases_settled": true,
+    "worst_peak_abs_aoa_error_deg": 0.18159266809843508,
+    "worst_rms_aoa_error_deg": 0.03506466430930412,
+    "worst_settling_time_2pct_s": 0.19999999999999996,
+    "maximum_elevator_delta_deg": 3.2467608390746654,
+    "cases": [
+      {
+        "trim_speed_mps": 12.0,
+        "disturbance_radps": 0.025,
+        "peak_abs_aoa_error_deg": 0.04539653138063279,
+        "rms_aoa_error_deg": 0.00876122580010156,
+        "final_aoa_error_deg": -0.0027066526307772125,
+        "settling_time_2pct_s": 0.0,
+        "peak_elevator_delta_deg": 0.8116902097686663,
+        "peak_pitch_rate_degps": 1.4323944878270582,
+        "final_altitude_change_m": -0.003033093607211593
+      },
+      {
+        "trim_speed_mps": 12.0,
+        "disturbance_radps": 0.05,
+        "peak_abs_aoa_error_deg": 0.09079415028813619,
+        "rms_aoa_error_deg": 0.017525739568635526,
+        "final_aoa_error_deg": -0.005405702475811066,
+        "settling_time_2pct_s": 0.0,
+        "peak_elevator_delta_deg": 1.6233804195373327,
+        "peak_pitch_rate_degps": 2.8647889756541165,
+        "final_altitude_change_m": -0.00608852187679426
+      },
+      {
+        "trim_speed_mps": 12.0,
+        "disturbance_radps": 0.1,
+        "peak_abs_aoa_error_deg": 0.18159266809843508,
+        "rms_aoa_error_deg": 0.03506466430930412,
+        "final_aoa_error_deg": -0.010781091924291943,
+        "settling_time_2pct_s": 0.19999999999999996,
+        "peak_elevator_delta_deg": 3.2467608390746654,
+        "peak_pitch_rate_degps": 5.729577951308233,
+        "final_altitude_change_m": -0.01226629321978247
+      },
+      {
+        "trim_speed_mps": 15.0,
+        "disturbance_radps": 0.025,
+        "peak_abs_aoa_error_deg": 0.0319907735244452,
+        "rms_aoa_error_deg": 0.004786119839491564,
+        "final_aoa_error_deg": -0.0027136155780000336,
+        "settling_time_2pct_s": 0.0,
+        "peak_elevator_delta_deg": 0.8116902097686663,
+        "peak_pitch_rate_degps": 1.4323944878270582,
+        "final_altitude_change_m": -0.0027831801138794316
+      },
+      {
+        "trim_speed_mps": 15.0,
+        "disturbance_radps": 0.05,
+        "peak_abs_aoa_error_deg": 0.06398187911025671,
+        "rms_aoa_error_deg": 0.009574143038409817,
+        "final_aoa_error_deg": -0.005427618880160812,
+        "settling_time_2pct_s": 0.1100000000000001,
+        "peak_elevator_delta_deg": 1.6233804195373327,
+        "peak_pitch_rate_degps": 2.8647889756541165,
+        "final_altitude_change_m": -0.005613448363889253
+      },
+      {
+        "trim_speed_mps": 15.0,
+        "disturbance_radps": 0.1,
+        "peak_abs_aoa_error_deg": 0.1279650924881633,
+        "rms_aoa_error_deg": 0.019155907975555903,
+        "final_aoa_error_deg": -0.010856729096813861,
+        "settling_time_2pct_s": 0.17999999999999994,
+        "peak_elevator_delta_deg": 3.2467608390746654,
+        "peak_pitch_rate_degps": 5.729577951308233,
+        "final_altitude_change_m": -0.011415083793011491
+      },
+      {
+        "trim_speed_mps": 18.0,
+        "disturbance_radps": 0.025,
+        "peak_abs_aoa_error_deg": 0.023766741774423786,
+        "rms_aoa_error_deg": 0.002983975343901612,
+        "final_aoa_error_deg": -0.000299139783813492,
+        "settling_time_2pct_s": 0.0,
+        "peak_elevator_delta_deg": 0.8116902097686663,
+        "peak_pitch_rate_degps": 1.4323944878270582,
+        "final_altitude_change_m": 0.01164622542025263
+      },
+      {
+        "trim_speed_mps": 18.0,
+        "disturbance_radps": 0.05,
+        "peak_abs_aoa_error_deg": 0.04753362519945814,
+        "rms_aoa_error_deg": 0.00596863435408934,
+        "final_aoa_error_deg": -0.0006011384916672429,
+        "settling_time_2pct_s": 0.13000000000000012,
+        "peak_elevator_delta_deg": 1.6233804195373325,
+        "peak_pitch_rate_degps": 2.8647889756541165,
+        "final_altitude_change_m": 0.0232428693566304
+      },
+      {
+        "trim_speed_mps": 18.0,
+        "disturbance_radps": 0.1,
+        "peak_abs_aoa_error_deg": 0.09506781987585065,
+        "rms_aoa_error_deg": 0.011940007648851336,
+        "final_aoa_error_deg": -0.0012137047312486217,
+        "settling_time_2pct_s": 0.18999999999999995,
+        "peak_elevator_delta_deg": 3.2467608390746654,
+        "peak_pitch_rate_degps": 5.729577951308233,
+        "final_altitude_change_m": 0.04628748631281969
+      }
+    ]
+  },
+  "time_step_convergence": {
+    "cases": [
+      {
+        "time_step_s": 0.02,
+        "peak_abs_aoa_error_deg": 0.0639471818656689,
+        "rms_aoa_error_deg": 0.009565263473193144,
+        "final_aoa_error_deg": -0.00542761930246373,
+        "settling_time_2pct_s": 0.10000000000000009,
+        "peak_elevator_delta_deg": 1.6233804195373327,
+        "peak_pitch_rate_degps": 2.8647889756541165,
+        "final_altitude_change_m": -0.005613453700022803
+      },
+      {
+        "time_step_s": 0.01,
+        "peak_abs_aoa_error_deg": 0.06398187911025671,
+        "rms_aoa_error_deg": 0.009574143038409817,
+        "final_aoa_error_deg": -0.005427618880160812,
+        "settling_time_2pct_s": 0.1100000000000001,
+        "peak_elevator_delta_deg": 1.6233804195373327,
+        "peak_pitch_rate_degps": 2.8647889756541165,
+        "final_altitude_change_m": -0.005613448363889253
+      },
+      {
+        "time_step_s": 0.005,
+        "peak_abs_aoa_error_deg": 0.06398368961327311,
+        "rms_aoa_error_deg": 0.009576626971932812,
+        "final_aoa_error_deg": -0.005427618857297394,
+        "settling_time_2pct_s": 0.10499999999999998,
+        "peak_elevator_delta_deg": 1.6233804195373327,
+        "peak_pitch_rate_degps": 2.8647889756541165,
+        "final_altitude_change_m": -0.005613448068917081
+      }
+    ],
+    "coarse_to_fine_peak_error_difference_percent": 0.057057896824744034,
+    "coarse_to_fine_rms_error_difference_percent": 0.11865867567956985
+  },
+  "closed_loop_eigenvalues": [
+    {
+      "real": -18.871338273783234,
+      "imaginary": 0.0
+    },
+    {
+      "real": -14.195851429172523,
+      "imaginary": 0.0
+    },
+    {
+      "real": -0.09175686367338468,
+      "imaginary": 0.48616656029837035
+    },
+    {
+      "real": -0.09175686367338468,
+      "imaginary": -0.48616656029837035
+    }
+  ],
+  "closed_loop_max_eigenvalue_real_part": -0.09175686367338468
+}
