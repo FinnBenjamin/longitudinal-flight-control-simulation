@@ -26,7 +26,6 @@ Closed-loop response is analyzed following a pitch-rate disturbance and compared
 trimmed flight behavior.
 
 ## Results
-## Results
 
 The nominal simulation represented steady, level flight at 15 m/s. A 0.05 rad/s pitch-rate disturbance was applied at 1 second to compare the aircraft’s open-loop response with its closed-loop angle-of-attack controller.
 
@@ -47,4 +46,6 @@ Numerical convergence was evaluated using integration time steps of 20, 10, and 
 
 These results are specific to the simulated aircraft model and its representative aerodynamic derivatives. They should be interpreted as simulation-based controller performance rather than experimentally validated aircraft performance.
 
-![Longitudinal Response](Figures/longitudinal_response.png)
+## Response Comparison
+
+![Open-loop and closed-loop response](flight_control_results/response_comparison.png)
