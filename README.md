@@ -3,7 +3,7 @@
 
 # Aircraft Longitudinal Dynamics and Flight Control Simulation
 
-This project models a representative 5 kg aircraft in two-dimensional longitudinal flight and compares its natural response with a closed-loop angle-of-attack controller.
+This project models a representative 5 kg aircraft in two-dimensional longitudinal flight and compares its natural response with a closed-loop angle-of-attack controller. This project requires Python 3.10 or a newer version.
 
 ## Features
 - Six nonlinear states: horizontal position, altitude, horizontal and vertical velocity, pitch angle, and pitch rate
